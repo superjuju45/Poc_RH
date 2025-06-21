@@ -1,0 +1,88 @@
+mat-sidenav-container {
+  height: 100%;
+}
+
+mat-sidenav, mat-sidenav-content {
+  padding: 16px;
+  overflow: hidden !important;
+  border: none !important;
+  background-color: #D9D9D9;
+}
+
+mat-sidenav,
+mat-sidenav .mat-locked-open,
+mat-sidenav .mat-closed .mat-locked-open-add-active {
+  background-color: #431AEB;
+  width: 300px !important;
+  overflow: hidden !important;
+  border: none !important;
+}
+
+mat-nav-list {
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mat-drawer:not(.mat-drawer-side) {
+    position: fixed;
+}
+
+.mat-drawer-backdrop {
+    position: fixed !important;
+}
+
+.list-item {
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+
+.unselected-list-item {
+  color: white;
+}
+
+.selected-list-item {
+  border-radius: 15px;
+  color: #431AEB;
+  background-color: #D9D9D9;
+}
+
+#sidenav-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 270px;
+  height: 75px; 
+  line-height: 75px;
+  align-content: start;
+}
+
+#border-image-div {
+  display: flex;
+  width: 140px;
+}
+
+#keybord-image {
+  padding: 0; 
+  transform: rotate(-35deg) scale(0.5);
+}
+
+#sidenav-name {
+  padding: 0;
+  height: 75px; 
+  line-height: 75px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+#sidenav-name:hover {
+  cursor: default;
+}
+
+.list-item:hover {
+  opacity: 50%;
+}

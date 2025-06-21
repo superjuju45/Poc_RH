@@ -1,0 +1,28 @@
+<mat-sidenav-container>
+    <mat-sidenav #sidenav mode="side" opened>
+        <div id="sidenav-title">
+            <div id="border-image-div">
+                <img id="keybord-image" src="/assets/images/keyboardImage_backgroundless.png" 
+                    alt="Icone clavier" />
+            </div>
+            <div id="sidenav-name">HandleUrjob</div>    
+        </div>
+        <mat-nav-list>
+            <a [ngClass]="{'list-item': true,
+                    'unselected-list-item': !dashboardLinkClass, 
+                    'selected-list-item': dashboardLinkClass}" 
+                routerLink="" routerLinkActive="active" 
+                [routerLinkActiveOptions]="{exact: true}" (click)="setOnDashboardLink()">Tableau de bord</a>
+            <a [ngClass]="{'list-item': true,
+                    'unselected-list-item': !payslipLinkClass,
+                    'selected-list-item': payslipLinkClass}" 
+                routerLink="payslip" routerLinkActive="active" (click)="setOnPayslipLink()">Bulletin de paie</a>
+            <a [ngClass]="{'list-item': true,
+                    'unselected-list-item': !leaveLinkClass, 
+                    'selected-list-item': leaveLinkClass}"
+                routerLink="leave" routerLinkActive="active" (click)="setOnLeaveLink()">Congés</a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+    </mat-sidenav-content>
+</mat-sidenav-container>
