@@ -1,0 +1,48 @@
+body {
+    background-color: #CACACA;
+    border-radius: 15px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    caret-color: transparent;
+}
+
+#parent-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+}
+
+#purple-circle {
+    display: flex;
+    border-radius: 50%;
+    background-color: #431AEB;
+    height: 30px;
+    width: 30px;
+}
+
+#icon {
+    padding: 0;
+    filter: invert(100%);
+}
+
+#text-div {
+    padding-left: 10px;
+}
+
+#arrow-div {
+    display: flex;
+    height: 30px;
+    width: 30px;
+    padding-right: 40px;
+}
+
+#thin-arrow {
+    padding: 0;
+}
+
+body:hover {
+    cursor: pointer;
+}

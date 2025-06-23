@@ -6,7 +6,7 @@ import { TabPaneComponent } from './tab-pane/tab-pane.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, TabPaneComponent],
+  imports: [CommonModule, TabPaneComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

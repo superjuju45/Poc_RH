@@ -1,0 +1,15 @@
+<body>
+    <div class="grid">
+        <div class="widget-container" id="news-container"><app-news-window/></div>    
+        <div class="widget-container" id="leave-container"><app-leave-widget/></div>
+        <div id="quick-actions">Actions rapides</div>
+        <div id="quick-access-calendar-button-container">
+            <app-quick-access-button src="/assets/images/calendarImage.png" 
+                text="Poser des congés" (click)="accessLeave()"/>
+        </div>
+        <div id="quick-access-trombon-button-container">
+            <app-quick-access-button src="/assets/images/trombonImage.png" 
+                text="Télécharger votre dernier bulletin" />
+        </div>
+    </div>
+</body>

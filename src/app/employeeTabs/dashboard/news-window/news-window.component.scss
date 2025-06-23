@@ -1,0 +1,35 @@
+body {
+    caret-color: transparent;
+}
+
+h6 {
+    padding-left: 75px;
+    padding-top: 10px;
+    font-size: 20px
+}
+
+.newsGrid {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 220px 220px;
+    grid-template-rows: 100px;
+}
+
+.niews {
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.link {
+    color: #30569C;
+    padding-top: 20px;
+}
+
+#niews1 {
+    background-color: #68E993;
+}
+
+#niews2 {
+    background-color: #E4606F;
+}
